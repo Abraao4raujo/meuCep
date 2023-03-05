@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cep</title>
+</head>
+<body>
+  <style>
+    #resultadoCep{
+      margin-top: 30px;
+      display: none;
+      background: rgb(207, 203, 203);
+      color: #923838;
+      width: 100%;
+      height: 50%;
+      border: 1px solid black;
+      border-radius: 5px;
+      text-align: justify;
+      font-weight: normal;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 1rem;
+    }
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  </style>
+  <form id="buscaCep">
+    <label for="cep">CEP</label>
+    <input type="number" name="cep" id="getCep" placeholder="Digite o CEP">
+    <input type="button" value="Enviar" id="enviar">
+  </form>
+    <div id="resultadoCep"></div>
+  <script src="script.js" defer></script>
+</body>
+</html>
